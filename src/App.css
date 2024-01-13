@@ -1,0 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karma:wght@500&display=swap'); */
+:root {
+  --yellow: #F5C32C;
+  --orange: #ff9500;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  /* font-family: 'Karma', serif; */
+}
+
+.App {
+  padding: 0.5rem 3.5rem;
+  overflow: hidden;
+  color: var(--black);
+}
+
+.button {
+  border-radius: 30px;
+  border: 1px solid rgb(133, 133, 133);
+  color: var(--orange);
+  font-weight: bold;
+  /* background-color: #ffffff; */
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button:hover {
+  box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+  background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+  color: white;
+  border: none;
+}
+
+@media screen and (max-width:480px) {
+  .App{
+    padding: 0.5rem 1rem;
+  }
+}

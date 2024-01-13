@@ -1,0 +1,136 @@
+.expertise>a{
+    display: contents;
+}
+span {
+    margin: 0px;
+}
+
+.services {
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 8rem;
+    margin-top: 9rem;
+}
+
+.expertise {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.expertise>:nth-child(1) {
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.expertise>:nth-child(2) {
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.expertise>:nth-child(3) {
+    color: var(--gray);
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.s-button {
+    width: 10rem;
+    height: 2rem;
+    margin-top: 1rem;
+}
+
+.cards>:nth-child(1) {
+    position: relative;
+    transform: translateX(500px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.cards>:nth-child(1).active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cards>:nth-child(2) {
+    transform: translateX(-500px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.cards>:nth-child(2).active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.cards>:nth-child(3) {
+    transform: translateX(600px);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.cards>:nth-child(3).active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media screen and (max-width:668px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .cards {
+        transform: scale(0.8);
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+    }
+
+    .cards>* {
+        position: static;
+    }
+
+    .cards>:nth-child(1).active {
+        position: sticky;
+
+    }
+
+    .cards>:nth-child(2).active {
+        position: sticky;
+    }
+
+    .cards>:nth-child(3).active {
+        position: sticky;
+    }
+
+    .blur {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1522px) {
+    .expertise {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1261px) {
+    .services {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+
+    .cards {
+        left: 10%;
+    }
+}

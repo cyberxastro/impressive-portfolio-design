@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-left {
+    flex: 1;
+    align-items: flex;
+    display: flex;
+    gap: 2rem;
+}
+
+.n-name {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-left>:nth-child(2) {
+    margin-top: 30px;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+
+.n-list {
+    flex: 10;
+}
+
+.n-list>ul {
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+li:hover {
+    color: rgb(255, 132, 0);
+    font-weight: bolder;
+    /* font-family: 'Khand', sans-serif; */
+}
+
+.n-button {
+    flex: 2;
+}
+
+@media screen and (max-width:480px) {
+    .n-list {
+        display: none;
+    }
+
+    .n-button {
+        display: none;
+    }
+}
